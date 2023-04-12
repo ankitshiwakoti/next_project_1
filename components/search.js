@@ -79,9 +79,9 @@ function Search({ data }) {
               </div>
               <div class="card-body">
                 <h3 className="card-title " style={{ fontSize: "30px" }}>
-                  {data[1].heading}
+                  {data[1]?.heading}
                 </h3>
-                <p class="card-text">{data[1].paragraph}</p>
+                <p class="card-text">{data[1]?.paragraph}</p>
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6">
                     <p class="card-text">
@@ -110,9 +110,9 @@ function Search({ data }) {
               </div>
               <div class="card-body">
                 <h3 className="card-title " style={{ fontSize: "30px" }}>
-                  {data[2].heading}
+                  {data[2]?.heading}
                 </h3>
-                <p class="card-text">{data[2].paragraph}</p>
+                <p class="card-text">{data[2]?.paragraph}</p>
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6">
                     <p class="card-text">
@@ -141,9 +141,9 @@ function Search({ data }) {
               </div>
               <div class="card-body">
                 <h3 className="card-title " style={{ fontSize: "30px" }}>
-                  {data[3].heading}
+                  {data[3]?.heading}
                 </h3>
-                <p class="card-text">{data[3].paragraph}</p>
+                <p class="card-text">{data[3]?.paragraph}</p>
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6">
                     <p class="card-text">

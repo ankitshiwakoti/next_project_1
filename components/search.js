@@ -194,3 +194,14 @@ function Search({ data }) {
   );
 }
 export default Search;
+
+export async function getStaticProps() {
+  const response = await fetch("/api/search");
+  const data = await response.json();
+  console.log(data);
+  return {
+    props: {
+      data: data,
+    },
+  };
+}

@@ -62,3 +62,13 @@ function Blogs3({ data }) {
   );
 }
 export default Blogs3;
+
+export async function getStaticProps() {
+  const response = await fetch("/api/search");
+  const data = await response.json();
+  return {
+    props: {
+      datas: data,
+    },
+  };
+}

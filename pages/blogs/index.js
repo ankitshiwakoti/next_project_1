@@ -7,7 +7,7 @@ import Slider from "@/components/slider";
 import React from "react";
 import { Container } from "react-bootstrap";
 
-const index = ({ blogsRes }) => {
+const Blog = ({ blogsRes }) => {
   const sample = [
     {
       title: "All Blogs",
@@ -58,7 +58,7 @@ const index = ({ blogsRes }) => {
   );
 };
 
-export default index;
+export default Blog;
 
 export const getStaticProps = async () => {
   const { NEXT_PUBLIC_API_URL } = process.env;

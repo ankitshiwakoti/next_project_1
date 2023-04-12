@@ -18,14 +18,14 @@ function Search({ data }) {
         <div className="row  d-flex ">
           {data?.map((items) => (
             <div
-              className="col-md-3  col-6 pe-3 padding-0 border-0 fs-5   text-primary"
+              className="col-lg-3  col-md-6 col-12  fs-5 p-lg-0 pt-3  text-primary"
               key={items?.title}
             >
               <button
                 className={`circular--portrait border-0 fw-bold ${
                   active === items?.title
-                    ? "text-white bg-dark  "
-                    : "text-black  bg-light bg-gradient "
+                    ? "text-primary text-decoration-underline "
+                    : "text-black "
                 }`}
                 onClick={() => setActive(items?.title)}
               >

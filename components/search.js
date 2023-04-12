@@ -19,7 +19,7 @@ function Search({ data }) {
           {data?.map((items) => (
             <div
               className="col-md-3  col-6 pe-3 padding-0 border-0 fs-5   text-primary"
-              key={items.title}
+              key={items?.title}
             >
               <button
                 className={`circular--portrait border-0 fw-bold ${
@@ -27,7 +27,7 @@ function Search({ data }) {
                     ? "text-white bg-dark  "
                     : "text-black  bg-light bg-gradient "
                 }`}
-                onClick={() => setActive(items.title)}
+                onClick={() => setActive(items?.title)}
               >
                 {items?.title}
               </button>
@@ -48,9 +48,9 @@ function Search({ data }) {
               </div>
               <div class="card-body">
                 <h3 className="card-title " style={{ fontSize: "30px" }}>
-                  {data[0].heading}
+                  {data[0]?.heading}
                 </h3>
-                <p class="card-text mt-3">{data[0].paragraph}</p>
+                <p class="card-text mt-3">{data[0]?.paragraph}</p>
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6">
                     <p class="card-text">

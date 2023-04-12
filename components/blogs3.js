@@ -17,7 +17,7 @@ function Blogs3({ data }) {
     <>
       <Row className="search d-flex justify-content-center">
         {data?.slice(0, visible).map((items) => (
-          <div className="col-md-4 mb-4" key={items.title}>
+          <div className="col-md-4 mb-4" key={items?.title}>
             <div className="card position-relative border-0">
               <Image src={blog} class="card-img-top" alt="..." />
               <div class="position-absolute top-0 start-0 mt-2 ms-2">
@@ -27,9 +27,9 @@ function Blogs3({ data }) {
               </div>
               <div class="card-body">
                 <h3 className="card-title " style={{ fontSize: "30px" }}>
-                  {items.heading}
+                  {items?.heading}
                 </h3>
-                <p class="card-text mt-3">{items.paragraph}</p>
+                <p class="card-text mt-3">{items?.paragraph}</p>
                 <div className="row d-flex justify-content-between pt-5">
                   <div className="col-md-6">
                     <p class="card-text">

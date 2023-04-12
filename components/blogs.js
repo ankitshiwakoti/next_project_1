@@ -13,7 +13,7 @@ function Blogs() {
   return (
     <>
       <Row className="search pb-5 pt-4">
-        <div className="col-md-6 mt-4 border-0">
+        <div className="col-md-6  mt-4 border-0">
           <div className="card position-relative border-0">
             <Image src={blog} class="card-img-top" alt="..." />
             <div class="position-absolute top-0 start-0 mt-2 ms-2">

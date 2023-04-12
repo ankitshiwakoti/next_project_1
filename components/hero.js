@@ -15,9 +15,9 @@ function Hero({ blog }) {
       style={{ backgroundColor: "#f0b27c" }}
     >
       <Col className="col-md-9 col-12 order-md-1 order-2 pt-5 ">
-        <h1 className="">{blog.title}</h1>
+        <h1 className="">{blog?.title}</h1>
         <p className="pt-3" style={{ fontSize: "18px" }}>
-          {blog.reports_title}
+          {blog?.reports_title}
         </p>
       </Col>
       <Col className="col-md-3 col-12 order-md-2 order-1  ">

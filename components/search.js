@@ -15,10 +15,10 @@ function Search({ data }) {
   return (
     <>
       <Row className=" pt-5">
-        <div className="col-md-12 d-flex" style={{ cursor: "pointer" }}>
+        <div className="row  d-flex ">
           {data?.map((items) => (
             <div
-              className="col-md-3 pe-3 border-0 fs-5   text-primary"
+              className="col-md-3  col-6 pe-3 padding-0 border-0 fs-5   text-primary"
               key={items.title}
             >
               <button
@@ -33,30 +33,11 @@ function Search({ data }) {
               </button>
             </div>
           ))}
-
-          {/* <div className="col-md-3 pe-3 border-0 fs-5   text-primary">
-            <a>
-              {" "}
-              <h3 style={{ fontSize: "20px", color: "#1d5c3f" }}>
-                CDR service
-              </h3>
-            </a>
-          </div>
-          <div className="col-md-3 pe-3 border-0 fs-5   text-primary ">
-            <h3 style={{ fontSize: "20px", color: "#1d5c3f" }}>
-              Skill Assessment
-            </h3>
-          </div>
-          <div className="col-md-3 pe-3 border-0 fs-5   text-primary">
-            <h3 style={{ fontSize: "20px", color: "#1d5c3f" }}>
-              Australia migration
-            </h3>
-          </div> */}
         </div>
       </Row>
 
       <Row className="search">
-        <div className="col-md-12 mt-4 border-0">
+        <div className="col-md-12 col-sm-12 mt-4 border-0">
           {active === data[0]?.title && (
             <div className="card position-relative border-0">
               <Image src={blog} class="card-img-top" alt="..." />

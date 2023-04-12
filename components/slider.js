@@ -4,7 +4,7 @@ import Image from "next/image";
 function Slider() {
   return (
     <>
-      <Row className="pt-5 pb-5">
+      <Row className="pt-5 pb-5 search">
         <div className="card position-relative border-0">
           <div class="row g-0">
             <div class="col-md-4">

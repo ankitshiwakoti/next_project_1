@@ -12,7 +12,7 @@ import Image from "next/image";
 function Blogs() {
   return (
     <>
-      <Row className="search">
+      <Row className="search pb-5 pt-4">
         <div className="col-md-6 mt-4 border-0">
           <div className="card position-relative border-0">
             <Image src={blog} class="card-img-top" alt="..." />

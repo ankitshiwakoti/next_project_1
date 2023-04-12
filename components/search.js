@@ -11,7 +11,7 @@ import Image from "next/image";
 
 function Search({ data }) {
   const [active, setActive] = useState(data[0]?.title);
-  console.log(data);
+
   return (
     <>
       <Row className=" pt-5">
@@ -161,33 +161,6 @@ function Search({ data }) {
               </div>
             </div>
           )}
-
-          {/* <div className="col-12  ">
-            {active === data[0]?.title && (
-              <h1 className="text-start mt-3"> {data[0].head1}</h1>
-            )}
-            {active === data[0]?.button && (
-              <p className="text-start mt-2 fs-5 fw-light">{data[0].body1}</p>
-            )}
-            {active === data[1]?.button && (
-              <h1 className="text-start mt-3"> {data[1].head1}</h1>
-            )}
-            {active === data[1]?.button && (
-              <p className="text-start mt-2 fs-5 fw-light">{data[1].body1}</p>
-            )}
-            {active === data[2]?.button && (
-              <h1 className="text-start mt-3"> {data[2].head1}</h1>
-            )}
-            {active === data[2]?.button && (
-              <p className="text-start mt-2 fs-5 fw-light">{data[2].body1}</p>
-            )}
-            {active === data[3]?.button && (
-              <h1 className="text-start mt-3"> {data[3].head1}</h1>
-            )}
-            {active === data[3]?.button && (
-              <p className="text-start mt-2 fs-5 fw-light">{data[3].body1}</p>
-            )}
-          </div> */}
         </div>
       </Row>
     </>
@@ -195,13 +168,13 @@ function Search({ data }) {
 }
 export default Search;
 
-export async function getStaticProps() {
-  const response = await fetch("/api/search");
-  const data = await response.json();
-  console.log(data);
-  return {
-    props: {
-      data: data,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const response = await fetch("/api/search");
+//   const data = await response.json();
+//   console.log(data);
+//   return {
+//     props: {
+//       data: data,
+//     },
+//   };
+// }

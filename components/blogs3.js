@@ -7,6 +7,7 @@ import { useState } from "react";
 import blog from "../public/assets/blog.jpg";
 
 import Image from "next/image";
+import Link from "next/link";
 
 function Blogs3({ data }) {
   const [visible, setVisible] = useState(3);
@@ -39,9 +40,11 @@ function Blogs3({ data }) {
                     </p>
                   </div>
                   <div className="col-md-6 text-end">
-                    <p class="card-text">
-                      <small class="text-muted">continue... </small>
-                    </p>
+                    <Link href="/blogs/2">
+                      <p class="card-text">
+                        <small class="text-muted">continue{">>>"} </small>
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>

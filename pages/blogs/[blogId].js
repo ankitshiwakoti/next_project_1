@@ -1,6 +1,7 @@
 import { Button, Container, Row } from "react-bootstrap";
 import blog from "../../public/assets/blogid.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function BlogDetails() {
   return (
@@ -318,6 +319,72 @@ function BlogDetails() {
                   style={{ backgroundColor: "#f0e5f2", color: "black" }}
                 >
                   <p>Share to Pinterest</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-12 ">
+              <div className="row">
+                <h2>Our Blog Category</h2>
+              </div>
+              <div
+                className="   px-3 py-2 my-2 rounded-pill  col-md-12 text-center"
+                style={{ backgroundColor: "#f0e5f2", color: "black" }}
+              >
+                <p>Australia migration</p>
+              </div>
+              <div
+                className="   px-3 py-2 my-2 rounded-pill  col-md-12 text-center"
+                style={{ backgroundColor: "#f0e5f2", color: "black" }}
+              >
+                <p className="">Skill Assesment</p>
+              </div>
+              <div
+                className="   px-3 py-2 my-2 rounded-pill  col-md-12 text-center"
+                style={{ backgroundColor: "#f0e5f2", color: "black" }}
+              >
+                <p>CDR Services</p>
+              </div>
+            </div>
+
+            <div className="col-md-12 search  mt-4 border-0">
+              <div className="card position-relative border-0">
+                <Image src={blog} class="card-img-top" alt="..." />
+                <div class="position-absolute top-0 start-0 mt-2 ms-2">
+                  <button className="rounded-pill border-0">
+                    Australian migration
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h3 className="card-title " style={{ fontSize: "30px" }}>
+                    The compulsion of employment letter to Engineers Australia
+                    for CDR
+                  </h3>
+                  <p class="card-text mt-3">
+                    CDR Report is a crucial Report that showcases all the
+                    details regarding your Experience, your day-by-day progress,
+                    and your roles and responsibilities towards your company or
+                    an organization .CDR Report is a crucial Report that
+                    showcases all the details regarding your Experience, your
+                    day-by-day progress, and your roles and responsibilities
+                    towards your company or an organization
+                  </p>
+                  <div className="row d-flex justify-content-between pt-5">
+                    <div className="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted">
+                          Monday, October 10th, 2022
+                        </small>
+                      </p>
+                    </div>
+                    <div className="col-md-6 text-end">
+                      <Link href="/blogs/2">
+                        <p class="card-text">
+                          <small class="text-muted">continue{">>>"} </small>
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

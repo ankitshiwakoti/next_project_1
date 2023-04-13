@@ -8,6 +8,7 @@ import blog from "../public/assets/blog.jpg";
 import blog2 from "../public/assets/blog2.jpg";
 import blog3 from "../public/assets/blog3.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function Blogs() {
   return (
@@ -42,9 +43,11 @@ function Blogs() {
                   </p>
                 </div>
                 <div className="col-md-6 text-end">
-                  <p class="card-text">
-                    <small class="text-muted">continue... </small>
-                  </p>
+                  <Link href="/blogs/2">
+                    <p class="card-text">
+                      <small class="text-muted">continue{">>>"} </small>
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -79,9 +82,11 @@ function Blogs() {
                   </p>
                 </div>
                 <div className="col-md-6 text-end">
-                  <p class="card-text">
-                    <small class="text-muted">continue... </small>
-                  </p>
+                  <Link href="/blogs/2">
+                    <p class="card-text">
+                      <small class="text-muted">continue{">>>"} </small>
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>

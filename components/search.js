@@ -8,6 +8,7 @@ import blog from "../public/assets/blog.jpg";
 import blog2 from "../public/assets/blog2.jpg";
 import blog3 from "../public/assets/blog3.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function Search({ data }) {
   const [active, setActive] = useState(data[0]?.title);
@@ -40,7 +41,7 @@ function Search({ data }) {
         <div className="col-md-12 col-sm-12 mt-4 border-0">
           {active === data[0]?.title && (
             <div className="card position-relative border-0">
-              <Image src={blog} class="card-img-top" alt="..." />
+              <Image src={blog} class="card-img-top" alt="img" />
               <div class="position-absolute top-0 start-0 mt-2 ms-2">
                 <button className="rounded-pill border-0">
                   Australian migration
@@ -60,9 +61,11 @@ function Search({ data }) {
                     </p>
                   </div>
                   <div className="col-md-6 text-end">
-                    <p class="card-text">
-                      <small class="text-muted">continue... </small>
-                    </p>
+                    <Link href="/blogs/2">
+                      <p class="card-text">
+                        <small class="text-muted">continue{">>>"} </small>
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -70,7 +73,7 @@ function Search({ data }) {
           )}
           {active === data[1]?.title && (
             <div class="card position-relative">
-              <Image src={blog2} class="card-img-top" alt="..." />
+              <Image src={blog2} class="card-img-top" alt="img" />
               <div class="position-absolute top-0 start-0 mt-2 ms-2">
                 <button className="rounded-pill border-0">
                   {" "}
@@ -91,9 +94,11 @@ function Search({ data }) {
                     </p>
                   </div>
                   <div className="col-md-6 text-end">
-                    <p class="card-text">
-                      <small class="text-muted">continue..</small>
-                    </p>
+                    <Link href="/blogs/2">
+                      <p class="card-text">
+                        <small class="text-muted">continue{">>>"} </small>
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -101,7 +106,7 @@ function Search({ data }) {
           )}
           {active === data[2]?.title && (
             <div class="card position-relative">
-              <Image src={blog3} class="card-img-top" alt="..." />
+              <Image src={blog3} class="card-img-top" alt="img" />
               <div class="position-absolute top-0 start-0 mt-2 ms-2">
                 <button className="rounded-pill border-0">
                   {" "}
@@ -122,9 +127,11 @@ function Search({ data }) {
                     </p>
                   </div>
                   <div className="col-md-6 text-end">
-                    <p class="card-text">
-                      <small class="text-muted">continue..</small>
-                    </p>
+                    <Link href="/blogs/2">
+                      <p class="card-text">
+                        <small class="text-muted">continue{">>>"} </small>
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -132,7 +139,7 @@ function Search({ data }) {
           )}
           {active === data[3]?.title && (
             <div class="card position-relative">
-              <Image src={blog2} class="card-img-top" alt="..." />
+              <Image src={blog2} class="card-img-top" alt="img" />
               <div class="position-absolute top-0 start-0 mt-2 ms-2">
                 <button className="rounded-pill border-0">
                   {" "}
@@ -153,9 +160,11 @@ function Search({ data }) {
                     </p>
                   </div>
                   <div className="col-md-6 text-end">
-                    <p class="card-text">
-                      <small class="text-muted">continue..</small>
-                    </p>
+                    <Link href="/blogs/2">
+                      <p class="card-text">
+                        <small class="text-muted">continue{">>>"} </small>
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
